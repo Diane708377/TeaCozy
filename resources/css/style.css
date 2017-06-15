@@ -54,3 +54,18 @@ nav a {
   color: inherit;
   text-decoration: underline;
 }
+
+/* footer styles: */
+
+footer {
+  opacity: inherit;
+}
+
+.contactContainer {
+  height: 200px;
+}
+
+#copyrightMention {
+  padding-left: 20px;
+  text-align: left;
+}
