@@ -25,11 +25,17 @@ body {
   justify-content: space-between;
 }
 
-.missionContainer {
+.missionContainer, .teaContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.threeImgContainer, .twoImgContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
 /* header styles: */
@@ -64,6 +70,10 @@ nav a {
 
 /* main content styles: */
 
+.mainContainer {
+  margin: auto;
+}
+
 /* mission section styles: */
 
 .missionContainer {
@@ -80,6 +90,42 @@ nav a {
   background-color: black;
   opacity: 0.9;
   width: inherit;
+}
+
+/* tea section styles: */
+
+.teaContainer {
+  margin: auto;
+  opacity: 0.9;
+  padding: 60px 0px;
+  width: 1000px;
+}
+
+.teaContainer h2 {
+  margin-bottom: 18px
+}
+
+.teaContainer>h4 {
+  margin-top: 0px;
+}
+
+.ImgContainer h4 {
+  margin-top: 10px;
+}
+
+.twoImgContainer {
+  margin: auto;
+  width: 665px;
+}
+
+.threeImgContainer {
+  width: 1000px;
+}
+
+.imgItem img {
+  height: 200px;
+  margin-bottom: 0px;
+  width: 300px;
 }
 
 /* locations section styles: */
