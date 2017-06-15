@@ -82,10 +82,44 @@ nav a {
   width: inherit;
 }
 
+/* locations section styles: */
+
+.locationContainer {
+  background-image: url("../images/img-locations-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  margin: auto;
+  padding-top: 75px;
+  width: 1200px;
+}
+
+.locationItem {
+  margin: 15px auto;
+}
+
+.addressItem {
+  background-color: black;
+  display: inline-block;
+  margin: 0px 20px;
+  opacity: 1;
+  padding: 15px 0px;
+  width: 300px;
+}
+
+h3 {
+  margin-top: 15px;
+}
+
+p {
+  margin-top: 35px;
+  margin-bottom: 15px;
+}
+
 /* footer styles: */
 
 footer {
-  opacity: inherit;
+  opacity: 0.9;
 }
 
 .contactContainer {
