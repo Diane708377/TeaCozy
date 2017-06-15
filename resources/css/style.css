@@ -1,0 +1,18 @@
+/* global styles: */
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: Helvetica;
+  font-size: 22px;
+  text-align: center;
+}
+
+body {
+  background-color: black;
+  color: seashell;
+  opacity: 0.9;
+}
