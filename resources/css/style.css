@@ -16,3 +16,41 @@ body {
   color: seashell;
   opacity: 0.9;
 }
+
+/* flexbox styles: */
+
+.headerContainer, .navContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* header styles: */
+
+header {
+  background-color: inherit;
+  border-bottom: 1px solid seashell;
+  height: 69px;
+  opacity: inherit;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+}
+
+.logoContainer img {
+  height: 50px;
+  margin-left: 10px;
+}
+
+nav {
+  margin-right: 5px;
+}
+
+nav span {
+  margin: 0px 10px;
+}
+
+nav a {
+  color: inherit;
+  text-decoration: underline;
+}
