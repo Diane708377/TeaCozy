@@ -1,4 +1,4 @@
-/* global styles: */
+/* global scope and shared styles: */
 
 html, body {
   margin: 0;
@@ -21,21 +21,88 @@ body, header, .missionItem, .addressItem {
 /* flexbox styles: */
 
 .headerContainer, .navContainer ul {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+    /* These vendor prefix properties are here to solve some compatibility problems
+    with some browser versions when using flexbox: */
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    /*---------------------------------------------------------------------------*/
+    display: flex;
+
+    /* These vendor prefix properties are here to solve some compatibility problems
+    with some browser versions when using flexbox: */
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -ms-grid-row-align: center;
+    /*---------------------------------------------------------------------------*/
+    align-items: center;
+
+    /* These vendor prefix properties are here to solve some compatibility problems
+    with some browser versions when using flexbox: */
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    /*----------------------------------------------------------------------------*/
+    justify-content: space-between;
 }
 
 .missionContainer, .teaContainer {
+  /* These vendor prefix properties are here to solve some compatibility problems
+  with some browser versions when using flexbox: */
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  /*-----------------------------------------------------------------------------*/
   display: flex;
+
+  /* These vendor prefix properties are here to solve some compatibility problems
+  with some browser versions when using flexbox: */
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  /*------------------------------------------------------------------------------*/
   flex-direction: column;
+
+  /* These vendor prefix properties are here to solve some compatibility problems
+  with some browser versions when using flexbox: */
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -ms-grid-row-align: center;
+  /*------------------------------------------------------------------------------*/
   align-items: center;
+
+  /* These vendor prefix properties are here to solve some compatibility problems
+  with some browser versions when using flexbox: */
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  /*------------------------------------------------------------------------------*/
   justify-content: center;
 }
 
 .threeImgContainer, .twoImgContainer {
+  /* These vendor prefix properties are here to solve some compatibility problems
+  with some browser versions when using flexbox: */
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  /*------------------------------------------------------------------------------*/
   display: flex;
+
+  /* These vendor prefix properties are here to solve some compatibility problems
+  with some browser versions when using flexbox: */
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -ms-grid-row-align: center;
+  /*------------------------------------------------------------------------------*/
   align-items: center;
+
+  /* These vendor prefix properties are here to solve some compatibility problems
+  with some browser versions when using flexbox: */
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  /*-------------------------------------------------------------------------------*/
   justify-content: space-around;
 }
 
