@@ -3,23 +3,24 @@
 html, body {
   margin: 0;
   padding: 0;
-}
-
-html {
   font-family: Helvetica;
   font-size: 22px;
   text-align: center;
-}
-
-body {
   background-color: black;
   color: seashell;
+}
+
+body, header, .missionItem, .teaContainer, footer {
   opacity: 0.9;
+}
+
+body, header, .missionItem, .addressItem {
+  background-color: black;
 }
 
 /* flexbox styles: */
 
-.headerContainer, .navContainer {
+.headerContainer, .navContainer ul {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -41,10 +42,8 @@ body {
 /* header styles: */
 
 header {
-  background-color: inherit;
   border-bottom: 1px solid seashell;
   height: 69px;
-  opacity: inherit;
   position: fixed;
   width: 100%;
   z-index: 10;
@@ -59,7 +58,8 @@ nav {
   margin-right: 5px;
 }
 
-nav span {
+nav li {
+  list-style: none;
   margin: 0px 10px;
 }
 
@@ -87,8 +87,6 @@ nav a {
 }
 
 .missionItem {
-  background-color: black;
-  opacity: 0.9;
   width: inherit;
 }
 
@@ -96,7 +94,6 @@ nav a {
 
 .teaContainer {
   margin: auto;
-  opacity: 0.9;
   padding: 60px 0px;
   width: 1000px;
 }
@@ -145,7 +142,6 @@ nav a {
 }
 
 .addressItem {
-  background-color: black;
   display: inline-block;
   margin: 0px 20px;
   opacity: 1;
@@ -163,10 +159,6 @@ p {
 }
 
 /* footer styles: */
-
-footer {
-  opacity: 0.9;
-}
 
 .contactContainer {
   height: 200px;
